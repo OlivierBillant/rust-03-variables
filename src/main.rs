@@ -16,6 +16,12 @@ fn main() {
     println!("The value of x is: {}", y);
     let y:i32 = 60;
     println!("The sum of x and y is {}", my_function(x, y));
+
+    if my_function(x, y) == 66 {
+        println!("The result seems correct")
+    }else {
+        println!("I have a bad feeling about this")
+    }
 }
 
 fn my_function(x: i32, y:i32)-> i32{
